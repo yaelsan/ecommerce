@@ -1,0 +1,244 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* linea divisora */
+    
+    .linea-divisora {
+        margin: 20px 80px;
+        border: black solid 1px;
+    }
+    /* nav */
+    
+    .backgrNav {
+        background: linear-gradient(black, rgb(38, 37, 37));
+    }
+    
+    .navbar {
+        margin: 20px;
+    }
+    
+    .colorNav {
+        font-size: 22px;
+        font-family: 'Kaushan Script', cursive;
+        margin-left: 40px;
+    }
+    
+    .colorNav2 {
+        margin: 0 40px 0 0;
+    }
+    
+    .colorNav :hover {
+        color: #ed7a07 !important;
+    }
+    /* submenu navbar */
+    
+    .submenu {
+        align-items: center !important;
+        color: #fff !important;
+    }
+    
+    .tituloSubmenu {
+        color: #fff !important;
+        font-size: 16px !important;
+        letter-spacing: 2px;
+        font-family: 'Lucida Sans Unicode';
+        background: linear-gradient( rgb(38, 37, 37), black);
+    }
+    
+    .cantSubmenu {
+        text-align: center !important;
+    }
+    
+    .ulSubmenu {
+        text-decoration: none !important;
+    }
+    
+    .nav-link {
+        color: rgb(216, 213, 213) !important;
+    }
+    
+    tbody {
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    /* botones de submenu index*/
+    
+    .btn-info {
+        border-color: black !important;
+        border-radius: 10px !important;
+        font-size: 22px !important;
+        background: linear-gradient( rgb(38, 37, 37), black) !important;
+    }
+    
+    .btn-danger {
+        border-color: black !important;
+        border-radius: 10px !important;
+        font-size: 22px !important;
+        background-color: #ad0505 !important;
+    }
+    
+    .botnonessub {
+        gap: 1rem !important;
+    }
+    
+    .eliminar-producto {
+        border-color: #fff !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        background-color: #ad0505 !important;
+        color: #fff;
+    }
+    
+    .borrar-producto {
+        background-color: #ad0505 !important;
+        color: #fff !important;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    
+    #footer {
+        font-size: 14px !important;
+    }
+    
+    .vaciasNav {
+        background: #ad0505 !important;
+        color: #fff !important;
+    }
+    
+    .pagarNav {
+        align-items: center !important;
+        background: rgb(0, 109, 0) !important;
+        color: #fff !important;
+    }
+    /* submenu navbar  fin*/
+    /* contenedor de las card pintadas en Index */
+    
+    .contenedorCard {
+        background: linear-gradient( rgb(38, 37, 37), black);
+    }
+    
+    .templateIndividual {
+        margin-top: 200px !important;
+    }
+    
+    .card {
+        margin-top: 20px !important;
+    }
+    /* footer */
+    
+    .dFooter {
+        background: linear-gradient( rgb(38, 37, 37), black);
+        margin: 20px;
+    }
+    
+    .img-footer {
+        padding: 30px 0;
+    }
+    
+    .linkFooter {
+        color: whitesmoke;
+        padding: 40px 0;
+        text-align: left;
+    }
+    
+    #footerLink {
+        font-size: 20px;
+        color: #ed7a07;
+    }
+    
+    .aFooter {
+        font-size: 16px;
+        color: whitesmoke;
+        text-decoration: none !important;
+    }
+    
+    .linkFooter :hover {
+        color: #ed7a07 !important;
+    }
+    /* fin img */
+    /* TITULOS DE INDEX */
+    
+    .titulosIdenx {
+        background-color: #ed7a07 !important;
+        height: 80px !important;
+        margin: 20px;
+    }
+    
+    .tituloPresentacion {
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Lucida Sans Unicode';
+        color: black;
+        padding-top: 15px;
+    }
+    
+    .subTitutloPresentacion {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+        font-family: 'Lucida Sans Unicode';
+        color: black;
+    }
+    /* modicamos card index */
+    
+    .tituloCard {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .precioCard {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .cantidadCard {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    /* estilos para page pagos  */
+    /* background contenido */
+    
+    .backPaos {
+        background-color: rgba(236, 228, 228, 0.441);
+    }
+    /* titulo corre, usuario, direccion */
+    
+    .titulasoPago {
+        font-size: 28px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700 !important;
+    }
+    
+    .col-form-label {
+        font-size: 16px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700 !important;
+    }
+    
+    .totalesFinal {
+        font-size: 16px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700 !important;
+        color: rgb(1, 115, 1);
+    }
+    
+    .tablaTotales {
+        font-size: 15px !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400 !important;
+    }
+    
+    #seguirComprandoPagos {
+        background: rgba(0, 0, 255, 0.759) !important;
+        border: 0px;
+        border-radius: 5px !important;
+    }
+    
+    #procesar-compra {
+        background: rgb(26, 117, 15) !important;
+        border: 0px;
+        border-radius: 5px !important;
+    }

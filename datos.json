@@ -1,0 +1,152 @@
+[
+
+    {
+        "nombre": "Spaguetis",
+        "thumbnailUrl": "https://i.pinimg.com/564x/a5/ac/89/a5ac89efb3da9d6aff8f63a8b2bae2d0.jpg",
+        "precio": 90,
+        "id": 1,
+        "peso": "250 gr"
+    },
+    {
+        "nombre": "Fettuccini",
+        "thumbnailUrl": "https://i.pinimg.com/564x/19/79/6c/19796c2c90f430119b23184d754adc12.jpg",
+        "precio": 90,
+        "id": 2,
+        "peso": "250 gr"
+    },
+    {
+        "nombre": "Tagliatelle con Huevo",
+        "thumbnailUrl": "https://i.pinimg.com/564x/81/21/81/812181651188d45c0079a047df95286f.jpg",
+        "precio": 90,
+        "id": 3,
+        "peso": "250 gr"
+    },
+    {
+        "nombre": "Cabello de Angel",
+        "thumbnailUrl": "https://i.pinimg.com/564x/f5/5b/77/f55b77a5dd39dd1e0c3fb12272b65b39.jpg",
+        "precio": 110,
+        "id": 4,
+        "peso": "250 gr"
+    },
+    {
+        "nombre": "Ravioli Espinaca y Ricotta",
+        "thumbnailUrl": "https://i.pinimg.com/564x/8e/cb/f2/8ecbf2e307cdf6634ecaf0e67fdd4a74.jpg",
+        "precio": 160,
+        "id": 5,
+        "peso": "320gr"
+
+    },
+    {
+        "nombre": "Sorrentinos Jamon y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/cf/3e/3f/cf3e3f6ed79f903bcbcbde0c07f2157f.jpg",
+        "precio": 180,
+        "id": 6,
+        "peso": "320 gr"
+    },
+    {
+        "nombre": "Cappelletis Jamon y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/1b/82/ef/1b82efc34057959ab8d5cc3b5f973928.jpg",
+        "precio": 170,
+        "id": 7,
+        "peso": "300 gr"
+    },
+    {
+        "nombre": "Canelones con Acelga y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/59/43/bd/5943bdedab2364cef8880dc4f033850a.jpg",
+        "precio": 120,
+        "id": 8,
+        "peso": "350 gr"
+    },
+    {
+        "nombre": "Salsa Roja",
+        "thumbnailUrl": "https://i.pinimg.com/564x/2d/98/e8/2d98e80902df369144d5a5dd8c5e6417.jpg",
+        "precio": 60,
+        "id": 9,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Blanca",
+        "thumbnailUrl": "https://i.pinimg.com/564x/aa/0e/bd/aa0ebda8c4ce3600aabefabe05ac6ea4.jpg",
+        "precio": 90,
+        "id": 10,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Champiñones",
+        "thumbnailUrl": "https://i.pinimg.com/564x/35/90/7e/35907ed30b2f8e5ff0ed7892f04b4a32.jpg",
+        "precio": 90,
+        "id": 11,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa 4 Quesos",
+        "thumbnailUrl": "https://i.pinimg.com/564x/ca/bb/c7/cabbc7f012097466c4e75187aed02b8a.jpg",
+        "precio": 90,
+        "id": 12,
+        "peso": "500 cc"
+    },
+
+    {
+        "nombre": "Sorrentinos Jamon y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/cf/3e/3f/cf3e3f6ed79f903bcbcbde0c07f2157f.jpg",
+        "precio": 90,
+        "id": 13,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Cappelletis Jamon y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/1b/82/ef/1b82efc34057959ab8d5cc3b5f973928.jpg",
+        "precio": 90,
+        "id": 14,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Canelones con Acelga y Queso",
+        "thumbnailUrl": "https://i.pinimg.com/564x/59/43/bd/5943bdedab2364cef8880dc4f033850a.jpg",
+        "precio": 90,
+        "id": 15,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Roja",
+        "thumbnailUrl": "https://i.pinimg.com/564x/2d/98/e8/2d98e80902df369144d5a5dd8c5e6417.jpg",
+        "precio": 70,
+        "id": 16,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Blanca",
+        "thumbnailUrl": "https://i.pinimg.com/564x/aa/0e/bd/aa0ebda8c4ce3600aabefabe05ac6ea4.jpg",
+        "precio": 75,
+        "id": 17,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Champiñones",
+        "thumbnailUrl": "https://i.pinimg.com/564x/35/90/7e/35907ed30b2f8e5ff0ed7892f04b4a32.jpg",
+        "precio": 40,
+        "id": 18,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Puttanesca",
+        "thumbnailUrl": "https://i.pinimg.com/564x/9b/0e/65/9b0e65e9916a2ab16794b11123d9d119.jpg",
+        "precio": 80,
+        "id": 19,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Amatricina",
+        "thumbnailUrl": "https://i.pinimg.com/564x/94/9a/6d/949a6d49f99f0e82becc150804aee9f2.jpg",
+        "precio": 65,
+        "id": 20,
+        "peso": "500 cc"
+    },
+    {
+        "nombre": "Salsa Alfredo",
+        "thumbnailUrl": "https://i.pinimg.com/564x/b1/f5/71/b1f571c289e0617e0f3e12f6126e09a0.jpg",
+        "precio": 75,
+        "id": 21,
+        "peso": "500 cc"
+    }
+]

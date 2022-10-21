@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+
+    <title>Pastas-Toti-Pago</title>
+
+</head>
+
+
+
+
+<body>
+    <!-- nav -->
+    <header class="backgrNav header">
+        <nav class="navbar navbar-expand-md navbar-dark container-fluid ">
+            <a class="navbar-brand" href="#"><img src="./img/logoTotiBlanco.png" alt="logo" width="140px"></a>
+        </nav>
+
+    </header>
+    <!-- lo nuevo -->
+    <main class="backPaos">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col tituloCompras">
+                    <h2 class="titulasoPago d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form id="procesar-pago" action="#">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Nombre y Apellido :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente" placeholder="Ingresa tu nombre y apellido" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="email" class="form-control" id="correo" placeholder="Ingresa tu correo" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="direccion" class="col-12 col-md-2 col-form-label h2">Dirección :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección" required>
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="table-responsive">
+                            <table class="table" id="lista-compra">
+                                <thead class="tablaTotales">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Accion</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody id="items1"></tbody>
+                                <tfoot>
+                                    <tr id="totales">
+
+                                    </tr>
+                                </tfoot>
+                                <!-- pagos donde muestra sub total  envio total -->
+                            </table>
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">
+                                    <th scope="col">
+                                        <p class="totalesFinal">SUB TOTAL: $<span id="subtotal"></span></p>
+                                    </th>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">
+                                    <th scope="col">
+                                        <p class="totalesFinal">ENVIO : $<span id="iva"></span></p>
+                                    </th>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th colspan="4" scope="col" class="text-right">
+                                    <th scope="col">
+                                        <p class="totalesFinal">TOTAL : $<span id="total"></span></p>
+                                    </th>
+                                </th>
+
+                            </tr>
+                        </div>
+
+                        <!-- id="procesar-compra" -->
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" id="seguirComprandoPagos" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" id="procesar-compra" class="btn btn-info btn-block">Realizar Compra</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <!-- template -->
+
+
+    <template id="template-pago">
+    <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <td  class="botnonessub d-flex">
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button> 
+        </td>
+        <th scope="col">$<span></span></th>
+        <th scope="col"></th>
+        <th scope="col">$ <span></span></th>
+        <td>
+            <button class="eliminar-producto">X</button>
+        </td>
+    </tr>
+  </template>
+
+
+    <template id="template-totales">
+        <th scope="row" colspan="2">Sub Total: $<span>10</span</th>
+        <th>Total : $<span>5000</span</th>
+    </template>
+
+
+
+    <!-- comienzo footer -->
+    <div class="container-fluid dFooter">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 img-footer">
+                <img src="./img/logoTotiBlanco.png" alt="" width="130px">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4  linkFooter">
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 " id="footerLink"><strong><u>Links</u></strong></div>
+                    <div class="p-2"><a href="#" class="aFooter">Intragram</a></div>
+                    <div class="p-2"><a href="#" class="aFooter">whatsApp</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- links -->
+
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T " crossorigin="anonymous ">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="compra.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

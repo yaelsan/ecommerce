@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pastas-Toti-Index</title>
+</head>
+
+<body>
+    <!-- nav Productos -->
+    <header class="backgrNav header">
+        <nav class="navbar navbar-expand-md navbar-dark container-fluid ">
+            <a class="navbar-brand" href="#"><img src="./img/logoTotiBlanco.png" alt="logo" width="140px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <div class=" container my-2 my-lg-0">
+                    <div class="row  justify-content-end">
+                        <div class="two columns u-pull-right">
+                            <ul>
+                                <li class="submenu scrollSubmenu">
+                                    <img src="./img/megaCarrito.png" id="img-carrito" width="50px">
+                                    <div id="carrito">
+                                        <table id="lista-carrito" class="table u-full-width">
+                                            <thead class="tituloSubmenu">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <td>Nombre</td>
+                                                    <td>Precio</td>
+                                                    <td>Cantidad</td>
+                                                    <td>Accion</td>
+                                                    <td>Total</td>
+                                                    <td></td>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="items"></tbody>
+                                            <tfoot>
+                                                <tr id="footer">
+                                                    <th scope="row" colspan="5" style="font-size: 28px;">Carrito vacío !</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+
+                                        <p id="total" class="totalNav"></p>
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width vaciasNav">Vaciar Carrito</a>
+                                        <a href="#" id="procesar-compra" class="button u-full-width pagarNav">Procesar Compra</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- termina nav -->
+
+
+
+
+    <!-- fin img presentacion -->
+
+
+    <!-- comienzo de card carrito -->
+
+    <div class="titulosIdenx">
+        <h2 class="tituloPresentacion">-Todos nuestros Productos-</h2>
+        <h4 class="subTitutloPresentacion">Estan echos caceros y con ingredientes de primera calidad</h4>
+    </div>
+
+    <!-- Aqui se va pintar todas las card sacadas de Json local -->
+    <div class="contenedorCard">
+        <div class="container subcontenedorCard">
+            <div class="row" id="cards"></div>
+        </div>
+    </div>
+    <!-- template card index -->
+    <template class="templateIndividual" id="template-card">
+        <div class="col-12 mb-2 col-lg-4 col-md-6">
+          <div class="card">
+            <img src="" alt="" class="card-img-top" height="300px" width="auto">
+            <div class="card-body">
+              <h5 class="tituloCard">Titulo</h5>
+              <p class="precioCard">$ <span></span></p>
+              <p class="precioCard">Cantidad : <span></span></p>
+              <!-- <p class="cantidadCard">Cantidad : <span></span></p> -->
+              <button class="btn btn-dark">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div> 
+    </template>
+
+    <!-- template tabla carrito -->
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos: </th>
+        <td class="font-weight-bold"><span>10</span></td>
+        <th>Total :</th>
+        <td class="font-weight-bold">$<span>5000</span></td>
+    </template>
+
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>$<span></span></td>
+        <td class="cantSubmenu">1</td>
+        <td  class="botnonessub d-flex">
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button> 
+        </td>
+        <td>$<span></span></td>
+            <td>
+                <button class="borrar-producto">X</button>
+            </td>
+      </tr>
+    </template>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- comienzo footer -->
+    <div class="container-fluid dFooter">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 img-footer">
+                <img src="./img/logoTotiBlanco.png" alt="" width="130px">
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-4  linkFooter">
+                <div class="d-flex flex-column mb-3">
+                    <div class="p-2 " id="footerLink"><strong><u>Links</u></strong></div>
+                    <div class="p-2"><a href="#" class="aFooter">Intragram</a></div>
+                    <div class="p-2"><a href="#" class="aFooter">whatsApp</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin footer -->
+
+    <!-- comienzo links -->
+
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T " crossorigin="anonymous ">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
